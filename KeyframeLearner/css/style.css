@@ -1,0 +1,42 @@
+@keyframes square {
+  0% {
+    opacity: 1;
+    position: relative;
+    top: 50px;
+  }
+
+  33% {
+    opacity: .5;
+    position: relative;
+    right: -50px;
+  }
+
+  66% {
+    background-color: red;
+    transform: rotate(180deg);
+    transform: rotateY(180deg);
+    box-shadow: 10px 5px 5px blue;
+  }
+
+  100% {
+    position: relative;
+    opacity: .1;
+  }
+
+
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  position: relative;
+  right: -300px;
+  top: 150px;
+  background-color: black;
+  border-top-left-radius: 50px;
+  animation: square 4s 2s infinite alternate;
+}
+
+.box:hover {
+  animation: square 3s 1s infinite alternate;
+}
